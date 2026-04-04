@@ -1,0 +1,10 @@
+{
+  "unit_types": {
+	"spearman": { "name": "长枪兵", "base_hp": 100, "spirit_cost": 0 },
+	"hero_paladin": { "name": "圣骑士", "base_hp": 500, "spirit_type": "holy" }
+  },
+  "building_types": {
+	"fortress": { "name": "要塞", "defense_bonus": 50 },
+	"crystal_mine": { "name": "晶石矿场", "output_type": "crystal" }
+  }
+}

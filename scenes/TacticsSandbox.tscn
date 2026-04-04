@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://diegeu0hq42mr"]
+
+[ext_resource type="Script" uid="uid://b6be4ruqh7hbi" path="res://scripts/main.gd" id="1_asiq8"]
+[ext_resource type="Texture2D" uid="uid://c2ccn6ohiay7q" path="res://assets/world.png" id="1_dw0ok"]
+[ext_resource type="Script" uid="uid://dagf5idr5idg0" path="res://scripts/camera_2d.gd" id="2_gc50o"]
+[ext_resource type="PackedScene" uid="uid://elwgsqj5ruhl" path="res://scenes/City.tscn" id="3_dk46l"]
+
+[node name="TacticsSandbox" type="Node2D" unique_id=1900869845]
+script = ExtResource("1_asiq8")
+
+[node name="WorldMap" type="Sprite2D" parent="." unique_id=571243382]
+texture = ExtResource("1_dw0ok")
+centered = false
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1859507809]
+zoom = Vector2(0.15, 0.15)
+script = ExtResource("2_gc50o")
+
+[node name="City" parent="." unique_id=1218991812 instance=ExtResource("3_dk46l")]
+position = Vector2(5567, 3988)
+city_id = "CITY_001"
+
+[node name="CollisionPolygon2D" parent="City" index="0" unique_id=1104881955]
+polygon = PackedVector2Array(110, -186, 69, -136, -48, -148, -169, -159, -235, -166, -272, -158, -346, -81, -397, -30, -396, 85, -356, 200, -246, 287, -118, 336, 65, 323, 178, 275, 309, 281, 332, 277, 337, 198, 394, 183, 405, 149, 398, 110, 400, 47, 417, -9, 432, -52, 490, -62, 507, -114, 381, -132, 326, -161)
+
+[node name="MainCityIcon" parent="City/BuildingIconsGroup" parent_id_path=PackedInt32Array(1218991812, 1606683196) index="0" unique_id=626797269]
+modulate = Color(0.75686276, 0.7294118, 0.57254905, 1)
+
+[node name="OptionalTowns" parent="City/BuildingIconsGroup" parent_id_path=PackedInt32Array(1218991812, 1606683196) index="1" unique_id=1875130871]
+modulate = Color(0.73333335, 0.7137255, 0.54901963, 1)
+
+[node name="Town1" parent="City/BuildingIconsGroup/OptionalTowns" index="0" unique_id=300216272]
+position = Vector2(203.99998, -104.99999)
+
+[node name="Town2" parent="City/BuildingIconsGroup/OptionalTowns" index="1" unique_id=54690269]
+position = Vector2(292.99997, 97.99999)
+
+[node name="Town3" parent="City/BuildingIconsGroup/OptionalTowns" index="2" unique_id=982218611]
+position = Vector2(-254.99998, -23.999998)
+
+[node name="NameLabel" parent="City/BuildingIconsGroup" parent_id_path=PackedInt32Array(1218991812, 1606683196) index="2" unique_id=728224794]
+offset_left = -26.0
+offset_top = 68.0
+offset_right = 14.0
+offset_bottom = 113.0
+
+[editable path="City"]

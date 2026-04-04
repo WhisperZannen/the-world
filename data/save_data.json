@@ -1,0 +1,25 @@
+{
+  "civilizations": {
+	"C_001": { "name": "人类帝国", "color": "FF000080" },
+	"C_002": { "name": "兽人部落", "color": "00FF0080" }
+  },
+  "cities": {
+	"CITY_001": { 
+	  "name": "铃兰城", 
+	  "owner_civ": "C_001", 
+	  "town_count": 3 
+	},
+	"CITY_002": { 
+	  "name": "丰饶城", 
+	  "owner_civ": "C_001", 
+	  "town_count": 1 
+	},
+	"CITY_003": { 
+	  "name": "黑石镇", 
+	  "owner_civ": "C_002", 
+	  "town_count": 0 
+	}
+  },
+  "facilities": {},
+  "units": {}
+}

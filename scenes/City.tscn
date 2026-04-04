@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://elwgsqj5ruhl"]
+
+[ext_resource type="Script" uid="uid://bxw31kewqpf07" path="res://scripts/city.gd" id="1_vf4ci"]
+[ext_resource type="Texture2D" uid="uid://qlb818aki5wn" path="res://assets/icons/City.png" id="2_hrcst"]
+[ext_resource type="Texture2D" uid="uid://bikdyqyyaxi4t" path="res://assets/icons/Town.png" id="3_xw602"]
+
+[node name="City" type="Area2D" unique_id=1218991812]
+script = ExtResource("1_vf4ci")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1104881955]
+
+[node name="Line2D" type="Line2D" parent="." unique_id=1309506442]
+width = 4.0
+default_color = Color(0, 0, 0, 0.5254902)
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=2128713802]
+
+[node name="BuildingIconsGroup" type="Node2D" parent="." unique_id=1606683196]
+position = Vector2(20, 20)
+
+[node name="MainCityIcon" type="Sprite2D" parent="BuildingIconsGroup" unique_id=626797269]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_hrcst")
+
+[node name="OptionalTowns" type="Node2D" parent="BuildingIconsGroup" unique_id=1875130871]
+
+[node name="Town1" type="Sprite2D" parent="BuildingIconsGroup/OptionalTowns" unique_id=300216272]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_xw602")
+
+[node name="Town2" type="Sprite2D" parent="BuildingIconsGroup/OptionalTowns" unique_id=54690269]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_xw602")
+
+[node name="Town3" type="Sprite2D" parent="BuildingIconsGroup/OptionalTowns" unique_id=982218611]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_xw602")
+
+[node name="NameLabel" type="Label" parent="BuildingIconsGroup" unique_id=728224794]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -19.0
+offset_top = 69.0
+offset_right = 21.0
+offset_bottom = 114.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
