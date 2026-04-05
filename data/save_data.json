@@ -1,7 +1,9 @@
 {
   "civilizations": {
-	"C_001": { "name": "人类帝国", "color": "FF000080" },
-	"C_002": { "name": "兽人部落", "color": "00FF0080" }
+	"C_000": {"name": "无归属", "color": "FFFFFF80"},
+	"C_001": { "name": "铃兰之剑", "color": "90d7f180" },
+	"C_002": { "name": "伊利亚王国", "color": "FF000080" },
+	"C_003": { "name": "薇尔德", "color": "00FF0080" }
   },
   "cities": {
 	"CITY_001": { 
@@ -11,13 +13,18 @@
 	},
 	"CITY_002": { 
 	  "name": "丰饶城", 
-	  "owner_civ": "C_001", 
-	  "town_count": 1 
+	  "owner_civ": "C_002", 
+	  "town_count": 3 
 	},
 	"CITY_003": { 
-	  "name": "黑石镇", 
+	  "name": "黑石城", 
+	  "owner_civ": "C_000", 
+	  "town_count": 3 
+	},
+	"CITY_004": { 
+	  "name": "中洲城", 
 	  "owner_civ": "C_002", 
-	  "town_count": 0 
+	  "town_count": 3 
 	}
   },
   "facilities": {},

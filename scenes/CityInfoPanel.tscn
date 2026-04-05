@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://ddeyn7lg7d524"]
+
+[ext_resource type="Script" uid="uid://cdi160gqv6fye" path="res://scripts/CityInfoPanel.gd" id="1_dduck"]
+[ext_resource type="Texture2D" uid="uid://dt7f74qi24cm4" path="res://assets/ui/city_info_bg.png" id="1_wosir"]
+
+[node name="CityInfoPanel" type="Control" unique_id=1110828436]
+layout_mode = 3
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -20.0
+offset_bottom = 20.0
+grow_horizontal = 0
+grow_vertical = 2
+script = ExtResource("1_dduck")
+
+[node name="Background" type="TextureRect" parent="." unique_id=2055074442]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -360.0
+offset_top = -342.5
+offset_bottom = 342.5
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("1_wosir")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1707696538]
+layout_mode = 0
+offset_left = -296.0
+offset_top = -263.0
+offset_right = 20.0
+offset_bottom = 221.0
+
+[node name="CityNameLabel" type="Label" parent="VBoxContainer" unique_id=632235954]
+layout_mode = 2
+
+[node name="PopulationLabel" type="Label" parent="VBoxContainer" unique_id=98052649]
+layout_mode = 2
+
+[node name="GarrisonLabel" type="Label" parent="VBoxContainer" unique_id=827018592]
+layout_mode = 2
+
+[node name="CloseButton" type="Button" parent="." unique_id=2033630981]
+layout_mode = 0
+offset_left = 1.0
+offset_top = -314.0
+offset_right = 33.0
+offset_bottom = -281.0
+text = "X"

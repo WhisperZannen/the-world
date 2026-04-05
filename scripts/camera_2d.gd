@@ -60,8 +60,26 @@ func zoom_at_point(factor: float, mouse_pos: Vector2):
 	var new_pos = position + direction / old_zoom - direction / target_zoom
 	position = new_pos
 
-# 每帧都会执行，用来处理“丝滑感”
+# 每帧都会执行，用来处理“丝滑感”和“动态LOD”
 func _process(delta: float) -> void:
-	# 利用 lerp（线性插值）让当前的 zoom 一点点靠近 target_zoom
-	# 这样你滑一下滚轮，画面是“滑”过去的，而不是跳过去的
+	# 1. 摄像机物理平滑缩放
 	zoom = zoom.lerp(target_zoom, smooth_speed * delta)
+	
+	# ==========================================
+	# 2. 【核心】动态计算地图色块透明度 (Political to Terrain Map)
+	# ==========================================
+	# 设定逻辑：zoom.x 在 0.25(远) 到 0.8(近) 之间时发生渐变
+	# 远景时 lod_factor = 0 (浓郁)，近景时 lod_factor = 1 (透明)
+	var lod_factor = clamp((zoom.x - 0.25) / 0.55, 0.0, 1.0)
+	
+	# 使用 lerp 计算最终系数：远景时保留 100% 颜色，近景时只保留 15% 的微弱颜色
+	var final_alpha_multiplier = lerp(1.0, 0.15, lod_factor)
+	
+	# 像广播一样，对全图所有加入了 "civ_territories" 群组的城市下达变色命令！
+	get_tree().call_group("civ_territories", "update_lod", final_alpha_multiplier)
+	# ==========================================
+	# 2. 【新增】强制全图所有国界线同步变淡
+	# ==========================================
+	var borders = get_tree().get_nodes_in_group("empire_borders")
+	for b in borders:
+		b.modulate.a = final_alpha_multiplier

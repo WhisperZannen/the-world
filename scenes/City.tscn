@@ -4,6 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://qlb818aki5wn" path="res://assets/icons/City.png" id="2_hrcst"]
 [ext_resource type="Texture2D" uid="uid://bikdyqyyaxi4t" path="res://assets/icons/Town.png" id="3_xw602"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hrcst"]
+size = Vector2(995.0001, 540.0001)
+
 [node name="City" type="Area2D" unique_id=1218991812]
 script = ExtResource("1_vf4ci")
 
@@ -16,11 +19,21 @@ default_color = Color(0, 0, 0, 0.5254902)
 [node name="Polygon2D" type="Polygon2D" parent="." unique_id=2128713802]
 
 [node name="BuildingIconsGroup" type="Node2D" parent="." unique_id=1606683196]
+modulate = Color(0.7529412, 0.7294118, 0.5764706, 1)
+z_index = 20
 position = Vector2(20, 20)
 
 [node name="MainCityIcon" type="Sprite2D" parent="BuildingIconsGroup" unique_id=626797269]
+position = Vector2(127.00001, -0.99999994)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_hrcst")
+
+[node name="IconArea" type="Area2D" parent="BuildingIconsGroup/MainCityIcon" unique_id=1356743000]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BuildingIconsGroup/MainCityIcon/IconArea" unique_id=31690505]
+position = Vector2(9.536743e-07, 159.99998)
+scale = Vector2(0.9999995, 0.9999995)
+shape = SubResource("RectangleShape2D_hrcst")
 
 [node name="OptionalTowns" type="Node2D" parent="BuildingIconsGroup" unique_id=1875130871]
 
@@ -29,21 +42,23 @@ scale = Vector2(0.1, 0.1)
 texture = ExtResource("3_xw602")
 
 [node name="Town2" type="Sprite2D" parent="BuildingIconsGroup/OptionalTowns" unique_id=54690269]
+position = Vector2(11.999999, 137.99998)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("3_xw602")
 
 [node name="Town3" type="Sprite2D" parent="BuildingIconsGroup/OptionalTowns" unique_id=982218611]
+position = Vector2(4.9999995, 72.99999)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("3_xw602")
 
 [node name="NameLabel" type="Label" parent="BuildingIconsGroup" unique_id=728224794]
-anchors_preset = 5
+anchors_preset = -1
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -19.0
-offset_top = 69.0
-offset_right = 21.0
-offset_bottom = 114.0
+offset_left = 81.0
+offset_top = 74.0
+offset_right = 121.0
+offset_bottom = 119.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
