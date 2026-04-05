@@ -9,7 +9,7 @@
 	"CITY_001": { 
 	  "name": "铃兰城", 
 	  "owner_civ": "C_001", 
-	  "town_count": 3 
+	  "town_count": 3 ,
 	},
 	"CITY_002": { 
 	  "name": "丰饶城", 

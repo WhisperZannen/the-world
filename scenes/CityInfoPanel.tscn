@@ -41,6 +41,9 @@ offset_bottom = 221.0
 [node name="CityNameLabel" type="Label" parent="VBoxContainer" unique_id=632235954]
 layout_mode = 2
 
+[node name="OwnerLabel" type="Label" parent="VBoxContainer" unique_id=225402223]
+layout_mode = 2
+
 [node name="PopulationLabel" type="Label" parent="VBoxContainer" unique_id=98052649]
 layout_mode = 2
 

@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://dagf5idr5idg0" path="res://scripts/camera_2d.gd" id="2_gc50o"]
 [ext_resource type="PackedScene" uid="uid://elwgsqj5ruhl" path="res://scenes/City.tscn" id="3_dk46l"]
 [ext_resource type="PackedScene" uid="uid://ddeyn7lg7d524" path="res://scenes/CityInfoPanel.tscn" id="5_dw0ok"]
+[ext_resource type="PackedScene" uid="uid://bw45w22fuujci" path="res://scenes/AdminConsole.tscn" id="6_gc50o"]
 
 [node name="TacticsSandbox" type="Node2D" unique_id=1900869845]
 script = ExtResource("1_asiq8")
@@ -16,6 +17,10 @@ metadata/_edit_lock_ = true
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1859507809]
 zoom = Vector2(0.15, 0.15)
+limit_left = 0
+limit_top = 0
+limit_right = 10112
+limit_bottom = 6736
 position_smoothing_enabled = true
 rotation_smoothing_enabled = true
 script = ExtResource("2_gc50o")
@@ -29,6 +34,9 @@ polygon = PackedVector2Array(5685, 3805, 5892, 3829, 5950, 3857, 6073, 3876, 607
 
 [node name="MainCityIcon" parent="City/BuildingIconsGroup" parent_id_path=PackedInt32Array(1218991812, 1606683196) index="0" unique_id=626797269]
 position = Vector2(5612, 4006)
+
+[node name="FireAnimation" parent="City/BuildingIconsGroup/MainCityIcon" index="0" unique_id=73855809]
+frame_progress = 0.0
 
 [node name="Town1" parent="City/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(1218991812, 1875130871) index="0" unique_id=300216272]
 position = Vector2(5751, 3903)
@@ -47,6 +55,9 @@ polygon = PackedVector2Array(5685, 3805, 5893, 3829, 5947, 3857, 6073, 3876, 608
 
 [node name="MainCityIcon" parent="City2/BuildingIconsGroup" parent_id_path=PackedInt32Array(1066824162, 1606683196) index="0" unique_id=626797269]
 position = Vector2(5942, 3557)
+
+[node name="FireAnimation" parent="City2/BuildingIconsGroup/MainCityIcon" index="0" unique_id=73855809]
+frame_progress = 0.0
 
 [node name="Town1" parent="City2/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(1066824162, 1875130871) index="0" unique_id=300216272]
 position = Vector2(6101.4, 3424.1997)
@@ -74,6 +85,9 @@ polygon = PackedVector2Array(1414.8652, 772.04517, 1308.8652, 1400.0452, 1220.86
 [node name="MainCityIcon" parent="City3/BuildingIconsGroup" parent_id_path=PackedInt32Array(605415178, 1606683196) index="0" unique_id=626797269]
 position = Vector2(1495.8651, 930.0451)
 
+[node name="FireAnimation" parent="City3/BuildingIconsGroup/MainCityIcon" index="0" unique_id=73855809]
+frame_progress = 0.0
+
 [node name="Town1" parent="City3/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(605415178, 1875130871) index="0" unique_id=300216272]
 position = Vector2(1482.8651, 1404.045)
 
@@ -94,6 +108,9 @@ polygon = PackedVector2Array(62, -246, -88, -301, -144, -272, -191, -266, -222, 
 [node name="MainCityIcon" parent="City4/BuildingIconsGroup" parent_id_path=PackedInt32Array(556536392, 1606683196) index="0" unique_id=626797269]
 position = Vector2(4.9999995, -88.99999)
 
+[node name="FireAnimation" parent="City4/BuildingIconsGroup/MainCityIcon" index="0" unique_id=73855809]
+frame_progress = 0.0
+
 [node name="Town1" parent="City4/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(556536392, 1875130871) index="0" unique_id=300216272]
 position = Vector2(-6.9999995, 153.99998)
 
@@ -106,6 +123,8 @@ position = Vector2(-176.99998, -184.99998)
 [node name="UILayer" type="CanvasLayer" parent="." unique_id=1525472417]
 
 [node name="CityInfoPanel" parent="UILayer" unique_id=1110828436 instance=ExtResource("5_dw0ok")]
+
+[node name="AdminConsole" parent="." unique_id=613023162 instance=ExtResource("6_gc50o")]
 
 [editable path="City"]
 [editable path="City2"]

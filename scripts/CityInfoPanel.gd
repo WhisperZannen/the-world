@@ -14,20 +14,20 @@ func _ready():
 # 接收大地图发来的城市 ID，并渲染数据
 # ==========================================
 func show_city_info(target_city_id: String):
-	# 1. 防呆拦截：确保数据存在
 	if not DataManager.game_data["cities"].has(target_city_id):
 		return
 		
 	var city_data = DataManager.game_data["cities"][target_city_id]
 	
-	# 2. 注入数据到文字节点
-	# 注意：如果你之前在 JSON 里没写 population(人口) 这些字段，
-	# 用 .get("字段名", "默认值") 可以防止游戏崩溃，极其安全！
-	$VBoxContainer/CityNameLabel.text = "城市： " + city_data["name"]
-	$VBoxContainer/PopulationLabel.text = "人口： " + str(city_data.get("population", "未知"))
-	$VBoxContainer/GarrisonLabel.text = "驻军： " + str(city_data.get("garrison", "无驻军"))
+	# --- 新增：跨表查询文明名称 ---
+	var civ_id = city_data["owner_civ"]
+	var civ_name = DataManager.game_data["civilizations"][civ_id]["name"]
 	
-	# 3. 呼出面板
+	$VBoxContainer/CityNameLabel.text = "城市： " + city_data["name"]
+	# 在 UI 中显示归属信息
+	$VBoxContainer/OwnerLabel.text = "归属： " + civ_name 
+	
+	$VBoxContainer/PopulationLabel.text = "人口： " + str(city_data.get("population", "未知"))
 	show()
 
 # ==========================================

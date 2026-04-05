@@ -82,3 +82,28 @@ func _on_icon_clicked(_viewport, event, _shape_idx):
 		# 通过群组广播，把自己的 city_id 扔给 UI 面板
 		# ==========================================
 		get_tree().call_group("city_info_panel", "show_city_info", city_id)
+		
+# ==========================================
+# 【修正】动态战火渲染逻辑
+# 精准识别主城及当前处于激活状态的小镇，并分别点燃
+# ==========================================
+func set_war_status(is_burning: bool):
+	# 1. 独立处理主城着火
+	if $BuildingIconsGroup/MainCityIcon.has_node("FireEffect"):
+		_toggle_fire($BuildingIconsGroup/MainCityIcon.get_node("FireEffect"), is_burning)
+		
+	# 2. 遍历处理村庄着火
+	for i in range($BuildingIconsGroup/OptionalTowns.get_child_count()):
+		var town_sprite = $BuildingIconsGroup/OptionalTowns.get_child(i)
+		# 核心防呆：只有当该村庄本身是显示的（意味着 JSON 里有这个村庄），才允许着火！
+		if town_sprite.visible and town_sprite.has_node("FireEffect"):
+			_toggle_fire(town_sprite.get_node("FireEffect"), is_burning)
+
+# 内部提取的火焰开关工具函数
+func _toggle_fire(fire_node: AnimatedSprite2D, is_burning: bool):
+	if is_burning:
+		fire_node.show()
+		fire_node.play("default")
+	else:
+		fire_node.stop()
+		fire_node.hide()

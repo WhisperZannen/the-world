@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bxw31kewqpf07" path="res://scripts/city.gd" id="1_vf4ci"]
 [ext_resource type="Texture2D" uid="uid://qlb818aki5wn" path="res://assets/icons/City.png" id="2_hrcst"]
 [ext_resource type="Texture2D" uid="uid://bikdyqyyaxi4t" path="res://assets/icons/Town.png" id="3_xw602"]
+[ext_resource type="PackedScene" uid="uid://de4ebud6c6nkh" path="res://scenes/FireEffect.tscn" id="4_xw602"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hrcst"]
 size = Vector2(995.0001, 540.0001)
@@ -28,6 +29,13 @@ position = Vector2(127.00001, -0.99999994)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_hrcst")
 
+[node name="FireAnimation" parent="BuildingIconsGroup/MainCityIcon" unique_id=73855809 instance=ExtResource("4_xw602")]
+visible = false
+z_index = 20
+position = Vector2(-49.999878, 20)
+scale = Vector2(3.1347654, 3.1347654)
+frame_progress = 0.8119829
+
 [node name="IconArea" type="Area2D" parent="BuildingIconsGroup/MainCityIcon" unique_id=1356743000]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BuildingIconsGroup/MainCityIcon/IconArea" unique_id=31690505]
@@ -41,15 +49,33 @@ shape = SubResource("RectangleShape2D_hrcst")
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("3_xw602")
 
+[node name="FireAnimation" parent="BuildingIconsGroup/OptionalTowns/Town1" unique_id=645446206 instance=ExtResource("4_xw602")]
+visible = false
+position = Vector2(-10, -60)
+scale = Vector2(1.5, 1.5)
+frame_progress = 0.2091677
+
 [node name="Town2" type="Sprite2D" parent="BuildingIconsGroup/OptionalTowns" unique_id=54690269]
 position = Vector2(11.999999, 137.99998)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("3_xw602")
 
+[node name="FireAnimation" parent="BuildingIconsGroup/OptionalTowns/Town2" unique_id=749455574 instance=ExtResource("4_xw602")]
+visible = false
+position = Vector2(-40.000004, -59.99991)
+scale = Vector2(1.5, 1.5)
+frame_progress = 0.6212536
+
 [node name="Town3" type="Sprite2D" parent="BuildingIconsGroup/OptionalTowns" unique_id=982218611]
 position = Vector2(4.9999995, 72.99999)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("3_xw602")
+
+[node name="FireAnimation" parent="BuildingIconsGroup/OptionalTowns/Town3" unique_id=1005638002 instance=ExtResource("4_xw602")]
+visible = false
+position = Vector2(-49.999996, -89.99989)
+scale = Vector2(1.5, 1.5)
+frame_progress = 0.7177258
 
 [node name="NameLabel" type="Label" parent="BuildingIconsGroup" unique_id=728224794]
 anchors_preset = -1

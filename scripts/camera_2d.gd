@@ -6,7 +6,7 @@ extends Camera2D
 
 # --- 调整参数区 ---
 var zoom_speed : float = 0.05        # 缩放灵敏度（越小越精准）
-var zoom_min : float = 0.01          # 最小缩放（看全景，针对2万像素图设定的极限）
+var zoom_min : float = 0.2          # 最小缩放（看全景，针对2万像素图设定的极限）
 var zoom_max : float = 2.0           # 最大缩放（看地标）
 var smooth_speed : float = 15.0      # 平滑速度（数值越高，反应越快，建议10-20）
 
