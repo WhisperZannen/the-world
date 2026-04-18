@@ -3,12 +3,13 @@
 	"C_000": {"name": "无归属", "color": "FFFFFF80"},
 	"C_001": { "name": "铃兰之剑", "color": "90d7f180" },
 	"C_002": { "name": "伊利亚王国", "color": "FF000080" },
-	"C_003": { "name": "薇尔德", "color": "00FF0080" }
+	"C_003": { "name": "薇尔德", "color": "00FF0080" },
+	"C_004": { "name": "法皇国", "color": "8f743180" }
   },
   "cities": {
 	"CITY_001": { 
 	  "name": "铃兰城", 
-	  "owner_civ": "C_001", 
+	  "owner_civ": "C_002", 
 	  "town_count": 3 ,
 	},
 	"CITY_002": { 
@@ -24,6 +25,11 @@
 	"CITY_004": { 
 	  "name": "中洲城", 
 	  "owner_civ": "C_002", 
+	  "town_count": 3 
+	},
+	"CITY_005": { 
+	  "name": "颂歌城", 
+	  "owner_civ": "C_004", 
 	  "town_count": 3 
 	}
   },

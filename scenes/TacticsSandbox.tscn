@@ -120,6 +120,25 @@ position = Vector2(360.99997, -3.9999998)
 [node name="Town3" parent="City4/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(556536392, 1875130871) index="2" unique_id=982218611]
 position = Vector2(-176.99998, -184.99998)
 
+[node name="City5" parent="." unique_id=588486548 instance=ExtResource("3_dk46l")]
+position = Vector2(4650, 3755)
+city_id = "CITY_005"
+
+[node name="CollisionPolygon2D" parent="City5" index="0" unique_id=1104881955]
+polygon = PackedVector2Array(607, 458, 635, 480, 684, 513, 741, 534, 770, 539, 735, 618, 686, 664, 599, 657, 476, 585, 359, 444, 7, 328, -197, 224, -418, 86, -131, -97, 117, -72, 397, 79, 546, 160, 520, 184, 518, 349, 561, 415)
+
+[node name="MainCityIcon" parent="City5/BuildingIconsGroup" parent_id_path=PackedInt32Array(588486548, 1606683196) index="0" unique_id=626797269]
+position = Vector2(171, 30.999998)
+
+[node name="Town1" parent="City5/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(588486548, 1875130871) index="0" unique_id=300216272]
+position = Vector2(84.999985, 214.99997)
+
+[node name="Town2" parent="City5/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(588486548, 1875130871) index="1" unique_id=54690269]
+position = Vector2(-178.99998, -4)
+
+[node name="Town3" parent="City5/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(588486548, 1875130871) index="2" unique_id=982218611]
+position = Vector2(347.99997, 132.99998)
+
 [node name="UILayer" type="CanvasLayer" parent="." unique_id=1525472417]
 
 [node name="CityInfoPanel" parent="UILayer" unique_id=1110828436 instance=ExtResource("5_dw0ok")]
@@ -130,3 +149,4 @@ position = Vector2(-176.99998, -184.99998)
 [editable path="City2"]
 [editable path="City3"]
 [editable path="City4"]
+[editable path="City5"]
