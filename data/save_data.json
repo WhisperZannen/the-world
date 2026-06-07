@@ -2,14 +2,20 @@
   "civilizations": {
 	"C_000": {"name": "无归属", "color": "FFFFFF80"},
 	"C_001": { "name": "铃兰之剑", "color": "90d7f180" },
-	"C_002": { "name": "伊利亚王国", "color": "FF000080" },
-	"C_003": { "name": "薇尔德", "color": "00FF0080" },
-	"C_004": { "name": "法皇国", "color": "8f743180" }
+	"C_002": { "name": "伊利亚王国", "color": "FF009980" },
+	"C_003": { "name": "薇尔德", "color": "33CC0080" },
+	"C_004": { "name": "法皇国", "color": "FFFF0080" },
+	"C_005": { "name": "埃拉曼", "color": "FFCC6680" },
+	"C_006": { "name": "巴哈斯帝国", "color": "99FFCC80" },
+	"C_007": { "name": "圣皇国", "color": "FFFF9980" },
+	"C_008": { "name": "教皇国", "color": "FFFFCC80" },
+	"C_009": { "name": "魔导国", "color": "9933DD80" },
+	"C_010": { "name": "矮人国", "color": "88776680" },
   },
   "cities": {
 	"CITY_001": { 
 	  "name": "铃兰城", 
-	  "owner_civ": "C_002", 
+	  "owner_civ": "C_001", 
 	  "town_count": 3 ,
 	},
 	"CITY_002": { 
@@ -19,7 +25,7 @@
 	},
 	"CITY_003": { 
 	  "name": "黑石城", 
-	  "owner_civ": "C_000", 
+	  "owner_civ": "C_005", 
 	  "town_count": 3 
 	},
 	"CITY_004": { 
@@ -28,8 +34,78 @@
 	  "town_count": 3 
 	},
 	"CITY_005": { 
+	  "name": "朝歌城", 
+	  "owner_civ": "C_001", 
+	  "town_count": 3 
+	},
+	"CITY_006": { 
 	  "name": "颂歌城", 
 	  "owner_civ": "C_004", 
+	  "town_count": 3 
+	},
+	"CITY_007": { 
+	  "name": "涌浪城", 
+	  "owner_civ": "C_002", 
+	  "town_count": 3 
+	},
+	"CITY_008": { 
+	  "name": "晨曦堡", 
+	  "owner_civ": "C_002", 
+	  "town_count": 3 
+	},
+	"CITY_009": { 
+	  "name": "高原城", 
+	  "owner_civ": "C_003", 
+	  "town_count": 3 
+	},
+	"CITY_010": { 
+	  "name": "琉璃港", 
+	  "owner_civ": "C_003", 
+	  "town_count": 3 
+	},
+	"CITY_011": { 
+	  "name": "眠歌城", 
+	  "owner_civ": "C_004", 
+	  "town_count": 3 
+	},
+	"CITY_012": { 
+	  "name": "浮空城", 
+	  "owner_civ": "C_004", 
+	  "town_count": 3 
+	},
+	"CITY_013": { 
+	  "name": "凛冬之地", 
+	  "owner_civ": "C_006", 
+	  "town_count": 3 
+	},
+	"CITY_014": { 
+	  "name": "和平谷", 
+	  "owner_civ": "C_007", 
+	  "town_count": 3 
+	},
+	"CITY_015": { 
+	  "name": "无瑕城", 
+	  "owner_civ": "C_008", 
+	  "town_count": 3 
+	},
+	"CITY_016": { 
+	  "name": "矿坑城", 
+	  "owner_civ": "C_002", 
+	  "town_count": 3 
+	},
+	"CITY_017": { 
+	  "name": "双峰城", 
+	  "owner_civ": "C_002", 
+	  "town_count": 3 
+	},
+	"CITY_018": { 
+	  "name": "耶·兰提尔", 
+	  "owner_civ": "C_009", 
+	  "town_count": 3 
+	},
+	"CITY_019": { 
+	  "name": "圣锤城", 
+	  "owner_civ": "C_010", 
 	  "town_count": 3 
 	}
   },

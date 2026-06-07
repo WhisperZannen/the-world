@@ -26,6 +26,12 @@ rotation_smoothing_enabled = true
 script = ExtResource("2_gc50o")
 metadata/_edit_lock_ = true
 
+[node name="UILayer" type="CanvasLayer" parent="." unique_id=1525472417]
+
+[node name="CityInfoPanel" parent="UILayer" unique_id=1110828436 instance=ExtResource("5_dw0ok")]
+
+[node name="AdminConsole" parent="." unique_id=613023162 instance=ExtResource("6_gc50o")]
+
 [node name="City" parent="." unique_id=1218991812 instance=ExtResource("3_dk46l")]
 city_id = "CITY_001"
 
@@ -128,25 +134,302 @@ city_id = "CITY_005"
 polygon = PackedVector2Array(607, 458, 635, 480, 684, 513, 741, 534, 770, 539, 735, 618, 686, 664, 599, 657, 476, 585, 359, 444, 7, 328, -197, 224, -418, 86, -131, -97, 117, -72, 397, 79, 546, 160, 520, 184, 518, 349, 561, 415)
 
 [node name="MainCityIcon" parent="City5/BuildingIconsGroup" parent_id_path=PackedInt32Array(588486548, 1606683196) index="0" unique_id=626797269]
-position = Vector2(171, 30.999998)
+position = Vector2(128.00002, 95)
+
+[node name="CollisionShape2D" parent="City5/BuildingIconsGroup/MainCityIcon/IconArea" parent_id_path=PackedInt32Array(588486548, 1356743000) index="0" unique_id=31690505]
+position = Vector2(-9.999998, 189.99998)
 
 [node name="Town1" parent="City5/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(588486548, 1875130871) index="0" unique_id=300216272]
-position = Vector2(84.999985, 214.99997)
+position = Vector2(-186, 41.999985)
 
 [node name="Town2" parent="City5/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(588486548, 1875130871) index="1" unique_id=54690269]
-position = Vector2(-178.99998, -4)
+position = Vector2(335.99994, 92.999985)
 
 [node name="Town3" parent="City5/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(588486548, 1875130871) index="2" unique_id=982218611]
-position = Vector2(347.99997, 132.99998)
+position = Vector2(-10, -38.999992)
 
-[node name="UILayer" type="CanvasLayer" parent="." unique_id=1525472417]
+[node name="City6" parent="." unique_id=1678180349 instance=ExtResource("3_dk46l")]
+position = Vector2(4708, 3760)
+city_id = "CITY_006"
 
-[node name="CityInfoPanel" parent="UILayer" unique_id=1110828436 instance=ExtResource("5_dw0ok")]
+[node name="CollisionPolygon2D" parent="City6" index="0" unique_id=1104881955]
+polygon = PackedVector2Array(466, 145, 483, 153, 521, 114, 616, 48, 714, 65, 805, 73, 907, 76, 977, 45, 916, -201, 826, -316, 699, -429, 578, -523, 436, -596, 328, -631, 161, -638, 60, -75)
 
-[node name="AdminConsole" parent="." unique_id=613023162 instance=ExtResource("6_gc50o")]
+[node name="MainCityIcon" parent="City6/BuildingIconsGroup" parent_id_path=PackedInt32Array(1678180349, 1606683196) index="0" unique_id=626797269]
+position = Vector2(319, -255.99997)
+
+[node name="Town1" parent="City6/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(1678180349, 1875130871) index="0" unique_id=300216272]
+position = Vector2(700, -96.99999)
+
+[node name="Town2" parent="City6/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(1678180349, 1875130871) index="1" unique_id=54690269]
+position = Vector2(253.99998, -90)
+
+[node name="Town3" parent="City6/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(1678180349, 1875130871) index="2" unique_id=982218611]
+position = Vector2(420.99997, -382)
+
+[node name="City7" parent="." unique_id=1689205717 instance=ExtResource("3_dk46l")]
+position = Vector2(4985, 4579)
+city_id = "CITY_007"
+
+[node name="CollisionPolygon2D" parent="City7" index="0" unique_id=1104881955]
+polygon = PackedVector2Array(-115, -79, 119, -268, 143, -238, 263, -168, 352, -161, 401, -207, 481, -135, 543, -99, 544, 15, 536, 74, 533, 171, 367, 265, 535, 429, 687, 603, 703, 743, 556, 748, 523, 742, 512, 590, 376, 669, 402, 777, 376, 847, 187, 745, 146, 669, 161, 614, 118, 577, 70, 605, -8, 515, 53, 376, -99, 266, -143, 138)
+
+[node name="MainCityIcon" parent="City7/BuildingIconsGroup" parent_id_path=PackedInt32Array(1689205717, 1606683196) index="0" unique_id=626797269]
+position = Vector2(283, 30)
+
+[node name="Town1" parent="City7/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(1689205717, 1875130871) index="0" unique_id=300216272]
+position = Vector2(255.99998, 619.99994)
+
+[node name="Town2" parent="City7/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(1689205717, 1875130871) index="1" unique_id=54690269]
+position = Vector2(-92.99999, 52.999992)
+
+[node name="Town3" parent="City7/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(1689205717, 1875130871) index="2" unique_id=982218611]
+position = Vector2(236.99997, 269.99997)
+
+[node name="City8" parent="." unique_id=1946609379 instance=ExtResource("3_dk46l")]
+position = Vector2(5927, 2452)
+city_id = "CITY_008"
+
+[node name="CollisionPolygon2D" parent="City8" index="0" unique_id=1104881955]
+polygon = PackedVector2Array(-94, -277, -121, -395, -50, -403, 52, -339, 174, -431, 399, -341, 504, -222, 508, -94, 301, 14, 327, 114, 138, 306, -51, 223, -112, 32, -120, -89, -91, -173)
+
+[node name="MainCityIcon" parent="City8/BuildingIconsGroup" parent_id_path=PackedInt32Array(1946609379, 1606683196) index="0" unique_id=626797269]
+position = Vector2(43.000015, -110.99999)
+
+[node name="Town1" parent="City8/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(1946609379, 1875130871) index="0" unique_id=300216272]
+position = Vector2(265.99997, -334.99997)
+
+[node name="Town2" parent="City8/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(1946609379, 1875130871) index="1" unique_id=54690269]
+position = Vector2(197.99998, 53.999992)
+
+[node name="City9" parent="." unique_id=1701856927 instance=ExtResource("3_dk46l")]
+position = Vector2(6525, 4876)
+city_id = "CITY_009"
+
+[node name="CollisionPolygon2D" parent="City9" index="0" unique_id=1104881955]
+polygon = PackedVector2Array(-513, 405, -463, 396, -425, 425, -373, 500, -280, 516, -208, 490, -182, 445, -184, 395, -97, 390, -70, 334, -85, 288, -58, 225, -33, 164, -45, 74, -23, -34, 31, -138, 73, -246, 60, -336, 48, -471, -63, -426, -164, -339, -144, -278, -414, -159, -585, -57, -601, 132, -697, 192, -733, 266, -675, 426, -553, 557, -500, 499, -495, 451)
+
+[node name="MainCityIcon" parent="City9/BuildingIconsGroup" parent_id_path=PackedInt32Array(1701856927, 1606683196) index="0" unique_id=626797269]
+position = Vector2(-173.99997, -12.999999)
+
+[node name="Town1" parent="City9/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(1701856927, 1875130871) index="0" unique_id=300216272]
+position = Vector2(-100.99999, -176.99998)
+
+[node name="Town2" parent="City9/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(1701856927, 1875130871) index="1" unique_id=54690269]
+position = Vector2(-577.99994, 282.99997)
+
+[node name="Town3" parent="City9/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(1701856927, 1875130871) index="2" unique_id=982218611]
+position = Vector2(-440.99997, 49.999992)
+
+[node name="City10" parent="." unique_id=458651112 instance=ExtResource("3_dk46l")]
+position = Vector2(6684, 4790)
+city_id = "CITY_010"
+
+[node name="CollisionPolygon2D" parent="City10" index="0" unique_id=1104881955]
+polygon = PackedVector2Array(-92, -398, 12, -404, 129, -418, 264, -368, 378, -319, 524, -279, 518, -260, 413, 366, 365, 440, 268, 492, 182, 452, 92, 549, -67, 591, -256, 476, -229, 420, -244, 374, -192, 250, -204, 160, -182, 52, -136, -38, -86, -159, -86.09657, -159.67607, -99, -250, -111, -385)
+
+[node name="MainCityIcon" parent="City10/BuildingIconsGroup" parent_id_path=PackedInt32Array(458651112, 1606683196) index="0" unique_id=626797269]
+position = Vector2(188, -294.99997)
+
+[node name="Town1" parent="City10/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(458651112, 1875130871) index="0" unique_id=300216272]
+position = Vector2(111.99999, -34.999996)
+
+[node name="Town2" parent="City10/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(458651112, 1875130871) index="1" unique_id=54690269]
+position = Vector2(0, 413.99994)
+
+[node name="Town3" parent="City10/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(458651112, 1875130871) index="2" unique_id=982218611]
+position = Vector2(-11, 186.99998)
+
+[node name="City11" parent="." unique_id=597962131 instance=ExtResource("3_dk46l")]
+position = Vector2(4438, 3417)
+city_id = "CITY_011"
+
+[node name="CollisionPolygon2D" parent="City11" index="0" unique_id=1104881955]
+polygon = PackedVector2Array(-205, 424, 81, 241, 331, 267, 432, -296, 230, -347, 95, -403, -93, -311, -184, -122, -136, 18, -389, 150)
+
+[node name="MainCityIcon" parent="City11/BuildingIconsGroup" parent_id_path=PackedInt32Array(597962131, 1606683196) index="0" unique_id=626797269]
+position = Vector2(118.00001, 21.999998)
+
+[node name="Town1" parent="City11/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(597962131, 1875130871) index="0" unique_id=300216272]
+position = Vector2(-14, -228.99997)
+
+[node name="Town2" parent="City11/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(597962131, 1875130871) index="1" unique_id=54690269]
+position = Vector2(-102.99999, 215.99997)
+
+[node name="Town3" parent="City11/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(597962131, 1875130871) index="2" unique_id=982218611]
+position = Vector2(255.99998, 159.99998)
+
+[node name="City12" parent="." unique_id=2134106715 instance=ExtResource("3_dk46l")]
+position = Vector2(3716, 3890)
+city_id = "CITY_012"
+
+[node name="CollisionPolygon2D" parent="City12" index="0" unique_id=1104881955]
+polygon = PackedVector2Array(86, -240, -135, -234, -308, -261, -510, -135, -568, -42, -549, 105, -439, 265, -377, 169, -246, 112, -106, 142, 5, 184, 167, 223, 247, 302, 345, 390, 356, 523, 372, 584, 510, 615, 625, 576, 730, 571, 938, 430, 1090, 542, 1120, 575, 1152, 595, 1154, 610, 1159, 606, 1170, 597, 1174, 594, 1179, 590, 1185, 585, 1190, 581, 1258, 527, 1308, 486, 1352, 451, 1387, 422, 1380, 414, 1370, 401, 1357, 386, 1336, 360, 1293, 308, 940, 192, 739, 89, 517, -49, 334, -323, 189, -333)
+
+[node name="MainCityIcon" parent="City12/BuildingIconsGroup" parent_id_path=PackedInt32Array(2134106715, 1606683196) index="0" unique_id=626797269]
+position = Vector2(-199.99997, -38.999996)
+
+[node name="Town1" parent="City12/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(2134106715, 1875130871) index="0" unique_id=300216272]
+position = Vector2(759.99994, 255.99998)
+
+[node name="Town2" parent="City12/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(2134106715, 1875130871) index="1" unique_id=54690269]
+position = Vector2(327.99997, 285.99997)
+
+[node name="Town3" parent="City12/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(2134106715, 1875130871) index="2" unique_id=982218611]
+position = Vector2(91.99999, 86.99999)
+
+[node name="City13" parent="." unique_id=1481373293 instance=ExtResource("3_dk46l")]
+position = Vector2(4009, 913)
+city_id = "CITY_013"
+
+[node name="CollisionPolygon2D" parent="City13" index="0" unique_id=1104881955]
+polygon = PackedVector2Array(-253, 474, -177, 634, 10, 671, 187, 705, 265, 596, 377, 605, 406, 466, 393, 382, 482, 338, 534, 327, 574, 211, 640, 138, 659, 126, 552, -45, 450, -104, 421, -272, 420, -381, 429, -437, 194, -426, -7, -459, -194, -509, -328, -504, -386, -414, -450, -365, -533, -286, -466, -122, -389, 53, -325, 225)
+
+[node name="MainCityIcon" parent="City13/BuildingIconsGroup" parent_id_path=PackedInt32Array(1481373293, 1606683196) index="0" unique_id=626797269]
+position = Vector2(122.00001, 238.99997)
+
+[node name="Town1" parent="City13/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(1481373293, 1875130871) index="0" unique_id=300216272]
+position = Vector2(-207.99998, -244.99998)
+
+[node name="Town2" parent="City13/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(1481373293, 1875130871) index="1" unique_id=54690269]
+position = Vector2(423.99997, 19.999992)
+
+[node name="Town3" parent="City13/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(1481373293, 1875130871) index="2" unique_id=982218611]
+position = Vector2(127.99999, 537.99994)
+
+[node name="City14" parent="." unique_id=203939320 instance=ExtResource("3_dk46l")]
+position = Vector2(1507, 4469)
+city_id = "CITY_014"
+
+[node name="CollisionPolygon2D" parent="City14" index="0" unique_id=1104881955]
+polygon = PackedVector2Array(-505, 335, -441, 306, -367, 295, -237, 321, -156, 333, -74, 328, 48, 305, 136, 258, 178, 225, 210, 194, 249, 161, 333, 179, 398, 218, 444, 267, 524, 294, 596, 315, 678, 278, 769, 214, 849, 211, 898, 153, 1021, 129, 1129, 47, 1188, -15, 1174, -71, 977, -112, 798, -143, 680, -147, 624, -155, 537, -178, 443, -199, 429, -235, 314, -252, 186, -275, 98, -264, -29, -281, -99, -292, -256, -290, -307, -322, -364, -326, -429, -275, -500, -237, -543, -190, -530, -130, -504, -81, -489, -54, -493, -11, -493, 62, -476, 127, -475, 191, -494, 269)
+
+[node name="MainCityIcon" parent="City14/BuildingIconsGroup" parent_id_path=PackedInt32Array(203939320, 1606683196) index="0" unique_id=626797269]
+position = Vector2(123.00001, -61.999996)
+
+[node name="Town1" parent="City14/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(203939320, 1875130871) index="0" unique_id=300216272]
+position = Vector2(-247.99998, 182.99998)
+
+[node name="Town2" parent="City14/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(203939320, 1875130871) index="1" unique_id=54690269]
+position = Vector2(369.99997, 109.999985)
+
+[node name="Town3" parent="City14/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(203939320, 1875130871) index="2" unique_id=982218611]
+position = Vector2(759.99994, 41.999992)
+
+[node name="City15" parent="." unique_id=1075909634 instance=ExtResource("3_dk46l")]
+position = Vector2(3136, 2471)
+city_id = "CITY_015"
+
+[node name="CollisionPolygon2D" parent="City15" index="0" unique_id=1104881955]
+polygon = PackedVector2Array(-339, 142, -357, 190, -251, 204, -147, 179, -52, 186, 5, 241, 42, 345, 70, 414, 115, 472, 228, 422, 281, 329, 382, 294, 542, 258, 622, 232, 637, 118, 698, 61, 698, -20, 566, -104, 421, -158, 374, -221, 289, -225, 277, -180, 235, -175, 203, -210, 55, -187, -35, -153, -180, -131, -241, -67)
+
+[node name="MainCityIcon" parent="City15/BuildingIconsGroup" parent_id_path=PackedInt32Array(1075909634, 1606683196) index="0" unique_id=626797269]
+position = Vector2(166, -71.99999)
+
+[node name="OptionalTowns" parent="City15/BuildingIconsGroup" parent_id_path=PackedInt32Array(1075909634, 1606683196) index="1" unique_id=1875130871]
+position = Vector2(-35, -6)
+
+[node name="Town1" parent="City15/BuildingIconsGroup/OptionalTowns" index="0" unique_id=300216272]
+position = Vector2(545.99994, -25.999998)
+
+[node name="Town2" parent="City15/BuildingIconsGroup/OptionalTowns" index="1" unique_id=54690269]
+position = Vector2(114.99999, 182.99998)
+
+[node name="Town3" parent="City15/BuildingIconsGroup/OptionalTowns" index="2" unique_id=982218611]
+position = Vector2(-66.99999, -33)
+
+[node name="City16" parent="." unique_id=498791579 instance=ExtResource("3_dk46l")]
+position = Vector2(6586, 3324)
+city_id = "CITY_016"
+
+[node name="CollisionPolygon2D" parent="City16" index="0" unique_id=1104881955]
+polygon = PackedVector2Array(-202, 362, -196, 349, -181, 248, -97, 205, -72, 171, -69, 151, -48, 143, -39, 116, -45, 87, -25, 83, -12, 89, 29, 68, 72, 70, 92, 59, 91, 1, 74, -22, 85, -57, 16, -98, -8, -95, -8, -138, 15, -220, 230, -306, 326, -227, 370, -198, 439, -181, 483, -189, 586, -145, 680, -110, 755, -72, 785, -31, 784, 14, 731, 52, 703, 87, 598, 114, 553, 106, 479, 138, 386, 159, 315, 206, 244, 252, 232, 235, 146, 297, 135, 327, 99, 362, 123, 429, 151, 466, 192, 465, 216, 445, 232, 461, 239, 441, 306, 445, 305, 461, 290, 473, 288, 504, 281, 517, 254, 516, 239, 526, 222, 524, 207, 516, 186, 520, 172, 524, 167, 539, 150, 540, 128, 568, 102, 568, 72, 584, 54, 612, 19, 644, -26, 651, -45, 635, -62, 634, -70, 612, -57, 594, -54, 569, -69, 524, -102, 525, -130, 493, -177, 503, -191, 473, -109, 420, -50, 391, -72, 361, -93, 363, -107, 349, -140, 354, -142, 364)
+
+[node name="MainCityIcon" parent="City16/BuildingIconsGroup" parent_id_path=PackedInt32Array(498791579, 1606683196) index="0" unique_id=626797269]
+position = Vector2(293, -7.9999995)
+
+[node name="Town1" parent="City16/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(498791579, 1875130871) index="0" unique_id=300216272]
+position = Vector2(-8.999999, 456.99997)
+
+[node name="Town2" parent="City16/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(498791579, 1875130871) index="1" unique_id=54690269]
+position = Vector2(167.99998, -176.99998)
+
+[node name="Town3" parent="City16/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(498791579, 1875130871) index="2" unique_id=982218611]
+position = Vector2(540.99994, -19)
+
+[node name="City17" parent="." unique_id=1270440770 instance=ExtResource("3_dk46l")]
+position = Vector2(6291, 3185)
+city_id = "CITY_017"
+
+[node name="CollisionPolygon2D" parent="City17" index="0" unique_id=1104881955]
+polygon = PackedVector2Array(114, 387, 198, 344, 223, 310, 226, 290, 247, 282, 256, 255, 250, 226, 270, 222, 283, 228, 324, 207, 367, 209, 387, 198, 386, 140, 369, 117, 380, 82, 311, 41, 287, 44, 287, 1, 180, -58, 70, -112, -19, -152, -42, -217, -98, -212, -208, -180, -305, -106, -403, -42, -453, -6, -525, 65, -344, 172, -151, 148, 85, 211)
+
+[node name="MainCityIcon" parent="City17/BuildingIconsGroup" parent_id_path=PackedInt32Array(1270440770, 1606683196) index="0" unique_id=626797269]
+position = Vector2(-151.99997, 3.9999995)
+
+[node name="Town1" parent="City17/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(1270440770, 1875130871) index="0" unique_id=300216272]
+position = Vector2(-413.99997, 27.999998)
+
+[node name="Town2" parent="City17/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(1270440770, 1875130871) index="1" unique_id=54690269]
+position = Vector2(196.99998, 32.999992)
+
+[node name="Town3" parent="City17/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(1270440770, 1875130871) index="2" unique_id=982218611]
+position = Vector2(140.99998, 248.99997)
+
+[node name="City18" parent="." unique_id=645979441 instance=ExtResource("3_dk46l")]
+position = Vector2(7276, 3005)
+city_id = "CITY_018"
+
+[node name="CollisionPolygon2D" parent="City18" index="0" unique_id=1104881955]
+polygon = PackedVector2Array(-298, 90, -284, 130, -251, 138, -207, 130, -104, 174, -10, 209, 65, 247, 95, 288, 94, 333, 88, 350, 130, 346, 214, 350, 328, 271, 352, 184, 417, 71, 375, 7, 350, 0, 345, 31, 289, 2, 212, -16, 131, -15, 15, -87, -32, -98, -41, -140, -112, -138, -202, -104, -276, -60, -294, -38, -309, 5, -305, 52, -310, 79)
+
+[node name="MainCityIcon" parent="City18/BuildingIconsGroup" parent_id_path=PackedInt32Array(645979441, 1606683196) index="0" unique_id=626797269]
+position = Vector2(29.00002, 52.999996)
+
+[node name="Town1" parent="City18/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(645979441, 1875130871) index="0" unique_id=300216272]
+position = Vector2(-156.99998, -43.999996)
+
+[node name="Town2" parent="City18/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(645979441, 1875130871) index="1" unique_id=54690269]
+position = Vector2(189.99998, 212.99997)
+
+[node name="Town3" parent="City18/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(645979441, 1875130871) index="2" unique_id=982218611]
+position = Vector2(288.99997, 65.99999)
+
+[node name="City19" parent="." unique_id=1015729536 instance=ExtResource("3_dk46l")]
+position = Vector2(7638, 3616)
+city_id = "CITY_019"
+
+[node name="CollisionPolygon2D" parent="City19" index="0" unique_id=1104881955]
+polygon = PackedVector2Array(-725, 144, -667, 162, -631, 140, -622, 86, -583, 33, -559, -3, -610, -23, -630, -76, -557, -91, -549, -123, -501, -128, -473, -149, -454, -178, -349, -205, -321, -240, -268, -278, -274, -261, -232, -265, -148, -261, -57, -190, -23, -60, 75, 2, 242, 99, 388, 131, 478, 149, 542, 188, 508, 213, 504, 234, 515, 249, 513, 270, 544, 267, 561, 293, 573, 293, 579, 319, 605, 350, 622, 324, 638, 327, 616, 397, 631, 491, 656, 503, 672, 545, 707, 573, 726, 618, 789, 674, 809, 674, 853, 736, 826, 773, 781, 784, 654, 745, 548, 682, 485, 657, 390, 622, 278, 595, 207, 579, -190, 446, -375, 411, -465, 335, -513, 329, -548, 297, -580, 291, -600, 297, -641, 269, -676, 235, -695, 215, -735, 211, -743, 191, -727, 175)
+
+[node name="MainCityIcon" parent="City19/BuildingIconsGroup" parent_id_path=PackedInt32Array(1015729536, 1606683196) index="0" unique_id=626797269]
+position = Vector2(-303.99997, 0.99999994)
+
+[node name="Town1" parent="City19/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(1015729536, 1875130871) index="0" unique_id=300216272]
+position = Vector2(473.99997, 352.99997)
+
+[node name="Town2" parent="City19/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(1015729536, 1875130871) index="1" unique_id=54690269]
+position = Vector2(-597.99994, 194.99998)
+
+[node name="Town3" parent="City19/BuildingIconsGroup/OptionalTowns" parent_id_path=PackedInt32Array(1015729536, 1875130871) index="2" unique_id=982218611]
+position = Vector2(101.99999, 169.99998)
 
 [editable path="City"]
 [editable path="City2"]
 [editable path="City3"]
 [editable path="City4"]
 [editable path="City5"]
+[editable path="City6"]
+[editable path="City7"]
+[editable path="City8"]
+[editable path="City9"]
+[editable path="City10"]
+[editable path="City11"]
+[editable path="City12"]
+[editable path="City13"]
+[editable path="City14"]
+[editable path="City15"]
+[editable path="City16"]
+[editable path="City17"]
+[editable path="City18"]
+[editable path="City19"]
